@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="doctor_horizontal">200dp</dimen>
+    <dimen name="doctor_vertical">200dp</dimen>
+    <dimen name="Text_size">25dp</dimen>
+    <dimen name="layout_size">15dp</dimen>
+    <dimen name="sign_inRight">32dp</dimen>
+    <dimen name="sign_inLeft">32dp</dimen>
+    <dimen name="elevation_17">17dp</dimen>
+    <dimen name="elevation_16">16dp</dimen>
+    <dimen name="height_10">10dp</dimen>
+    <dimen name="height_25">25dp</dimen>
+    <dimen name="height_50">50dp</dimen>
+    <dimen name="Signup_80">80dp</dimen>
+    <dimen name="Signup_2">2dp</dimen>
+    <dimen name="height_5">5dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+</resources>

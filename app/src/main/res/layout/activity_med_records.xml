@@ -1,0 +1,70 @@
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#373737"
+    tools:context=".medRecords">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ImageView
+            android:id="@+id/medRecordImage"
+            android:layout_gravity="center"
+            android:layout_width="@dimen/doctor_horizontal"
+            android:layout_height="@dimen/doctor_vertical"
+            android:layout_marginTop="140dp"
+            android:src="@drawable/med" />
+
+        <RelativeLayout
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/text1"
+                android:text="Add a Medical record."
+                android:fontFamily="@font/open_sans"
+                android:textSize="20sp"
+                android:textColor="#FF647C"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/Uploadpdf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/sign_inRight"
+            android:background="@drawable/custom_gradient_button"
+            android:text="Upload PDF"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:fontFamily="@font/open_sans"
+            android:textSize="18sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/Downloadpdf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/sign_inRight"
+            android:background="@drawable/custom_gradient_button"
+            android:text="Download PDF"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:fontFamily="@font/open_sans"
+            android:textSize="18sp"
+            android:onClick="retrievePDF" />
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

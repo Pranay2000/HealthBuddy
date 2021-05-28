@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1016978353947",
+    "firebase_url": "https://healthbuddy-fbfd1-default-rtdb.firebaseio.com",
+    "project_id": "healthbuddy-fbfd1",
+    "storage_bucket": "healthbuddy-fbfd1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1016978353947:android:eeee86c5a877b855acedbe",
+        "android_client_info": {
+          "package_name": "com.example.healthbuddy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1016978353947-prhrta5rselihqj03grh1qs3ruqr5ir1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyATNtLC7g76SeWwr7c5pwr9aVOZT51vbEk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1016978353947-prhrta5rselihqj03grh1qs3ruqr5ir1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

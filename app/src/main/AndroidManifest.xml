@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.healthbuddy">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@mipmap/ic_launcher_hb"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_hb_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.HealthBuddy"
+        android:usesCleartextTraffic="true">
+
+        <activity android:name=".frontpage" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".registerpage"
+            android:parentActivityName=".frontpage"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".login"
+            android:parentActivityName=".frontpage"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".forgotpassword"
+            android:parentActivityName=".login"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Doctor_board"
+            android:parentActivityName=".login"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".patient_dashboard"
+            android:parentActivityName=".login"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Doctor_details"
+            android:parentActivityName=".patient_dashboard"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".medRecords"
+            android:parentActivityName=".Doctor_board"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Patient_details"
+            android:parentActivityName=".Doctor_board"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Patient_DoctorProfileActivity"
+            android:parentActivityName=".Doctor_details"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".BookAppointment"
+            android:parentActivityName=".Doctor_details"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".RetrievePDF"
+            android:parentActivityName=".medRecords"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".retrivemed"
+            android:parentActivityName=".patient_dashboard"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ChatbotMain"
+            android:parentActivityName=".patient_dashboard"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
