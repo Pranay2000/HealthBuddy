@@ -56,3 +56,8 @@ aids in the job completion of doctors effectively such as upload medical records
 ## Limitations
 - Internet connection is must to run the app.
 - End-to-End conversation with the doctor instead of Chatbot.
+
+-------------------------
+## Developers:
+
+<https://github.com/Harshit2407>
