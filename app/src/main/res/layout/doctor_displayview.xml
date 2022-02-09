@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="#373737"
-    tools:context=".Doctor_details">
+    tools:context=".Patient_Data.Doctor_details">
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recycler_view"

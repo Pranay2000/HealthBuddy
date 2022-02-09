@@ -1,4 +1,4 @@
-package com.example.healthbuddy;
+package com.example.healthbuddy.Patient_Data;
 
 import android.app.DatePickerDialog;
 import android.app.TimePickerDialog;
@@ -13,6 +13,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.healthbuddy.R;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.database.DatabaseReference;

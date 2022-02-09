@@ -2,7 +2,9 @@ package com.example.healthbuddy;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
@@ -14,6 +16,8 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.healthbuddy.Doctor_Data.Doctor_board;
+import com.example.healthbuddy.Patient_Data.patient_dashboard;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
@@ -21,6 +25,7 @@ import com.google.firebase.auth.FirebaseAuth;
 
 public class login extends AppCompatActivity {
 
+    //declare java objects for xml widgets
     TextView btn, btnpassword;
     EditText inputEmail,inputPassword;
     Spinner mySpinner;
@@ -28,15 +33,19 @@ public class login extends AppCompatActivity {
     private FirebaseAuth mAuth;
     ProgressDialog mLoadingBar;
     boolean isDoc = false;
+    SharedPreferences sharedPreferences, prefs;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
+        //Typecast convert xml widgets into java objects
         btn = findViewById(R.id.textViewSignUp);
         inputEmail = findViewById(R.id.inputEmail);
+        inputEmail.setHint("example@gmail.com");
         inputPassword = findViewById(R.id.inputPassword);
+        inputPassword.setHint("********");
         mySpinner = findViewById(R.id.spinner1);
         btnLogin = findViewById(R.id.login_button);
         btnpassword = findViewById(R.id.forgotPassword);
@@ -45,6 +54,10 @@ public class login extends AppCompatActivity {
 
         ArrayAdapter <CharSequence> adapter= ArrayAdapter.createFromResource(this, R.array.spinner, R.layout.support_simple_spinner_dropdown_item);
         mySpinner.setAdapter(adapter);
+        sharedPreferences = PreferenceManager.getDefaultSharedPreferences(login.this);
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+        editor.putString("DoctorPatient", "2");
+        editor.commit();
 
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -109,6 +122,7 @@ public class login extends AppCompatActivity {
                             Intent intent = new Intent(login.this, Doctor_board.class);
                             intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
                             startActivity(intent);
+                            sharedPreferences.edit().putString("DoctorPatient", "1").apply();
                         }
                         else if(item.equals("Patient"))
                         {
@@ -116,6 +130,7 @@ public class login extends AppCompatActivity {
                             Intent intent = new Intent(login.this, patient_dashboard.class);
                             intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
                             startActivity(intent);
+                            sharedPreferences.edit().putString("DoctorPatient", "0").apply();
                         }
                     }
                     else

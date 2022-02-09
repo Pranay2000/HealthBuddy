@@ -1,4 +1,4 @@
-package com.example.healthbuddy;
+package com.example.healthbuddy.Patient_Data;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,6 +8,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.healthbuddy.Adapter.DoctorAdapter;
+import com.example.healthbuddy.R;
 import com.example.healthbuddy.models.Doctorlist;
 
 public class Doctor_details extends AppCompatActivity {

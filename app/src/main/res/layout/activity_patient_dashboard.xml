@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bgapps"
-    tools:context=".patient_dashboard">
+    tools:context=".Patient_Data.patient_dashboard">
 
     <LinearLayout
         android:orientation="vertical"

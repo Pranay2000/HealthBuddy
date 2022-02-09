@@ -1,4 +1,4 @@
-package com.example.healthbuddy;
+package com.example.healthbuddy.Doctor_Data;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -12,6 +12,8 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.healthbuddy.R;
+import com.example.healthbuddy.Patient_Data.RetrievePDF;
 import com.example.healthbuddy.models.putPDF;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.database.DatabaseReference;
@@ -93,6 +95,6 @@ public class medRecords extends AppCompatActivity {
     }
 
     public void retrievePDF(View view) {
-        startActivity(new Intent(getApplicationContext(),RetrievePDF.class));
+        startActivity(new Intent(getApplicationContext(), RetrievePDF.class));
     }
 }

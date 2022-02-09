@@ -1,11 +1,19 @@
-package com.example.healthbuddy;
+package com.example.healthbuddy.Patient_Data;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
+
+import com.example.healthbuddy.Chatbot.ChatbotMain;
+import com.example.healthbuddy.R;
+import com.example.healthbuddy.login;
 
 public class patient_dashboard extends AppCompatActivity {
 
@@ -14,8 +22,10 @@ public class patient_dashboard extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_patient_dashboard);
 
+        //declare java objects for xml widgets
         CardView DoctorDetails, BookAppointment, PatientRecords, PatientChat;
 
+        //Typecast convert xml widgets into java objects
         DoctorDetails = findViewById(R.id.DoctorDetails);
         BookAppointment = findViewById(R.id.BookAppoint);
         PatientRecords = findViewById(R.id.PatientRecords);
@@ -31,7 +41,7 @@ public class patient_dashboard extends AppCompatActivity {
         BookAppointment.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(patient_dashboard.this, BookAppointment.class));
+                startActivity(new Intent(patient_dashboard.this, com.example.healthbuddy.Patient_Data.BookAppointment.class));
             }
         });
 
@@ -48,5 +58,23 @@ public class patient_dashboard extends AppCompatActivity {
                 startActivity(new Intent(patient_dashboard.this, ChatbotMain.class));
             }
         });
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.main_menu, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.logout:
+                startActivity(new Intent(patient_dashboard.this, login.class));
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
     }
 }

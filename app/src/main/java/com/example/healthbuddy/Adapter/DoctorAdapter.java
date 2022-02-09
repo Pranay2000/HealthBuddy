@@ -11,9 +11,9 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.healthbuddy.Doctor_details;
+import com.example.healthbuddy.Patient_Data.Doctor_details;
 import com.example.healthbuddy.models.Doctorlist;
-import com.example.healthbuddy.Patient_DoctorProfileActivity;
+import com.example.healthbuddy.Patient_Data.Patient_DoctorProfileActivity;
 import com.example.healthbuddy.R;
 
 

@@ -40,44 +40,44 @@
             android:parentActivityName=".login"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".Doctor_board"
+            android:name=".Doctor_Data.Doctor_board"
             android:parentActivityName=".login"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".patient_dashboard"
+            android:name=".Patient_Data.patient_dashboard"
             android:parentActivityName=".login"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".Doctor_details"
-            android:parentActivityName=".patient_dashboard"
+            android:name=".Patient_Data.Doctor_details"
+            android:parentActivityName=".Patient_Data.patient_dashboard"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".medRecords"
-            android:parentActivityName=".Doctor_board"
+            android:name=".Doctor_Data.medRecords"
+            android:parentActivityName=".Doctor_Data.Doctor_board"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".Patient_details"
-            android:parentActivityName=".Doctor_board"
+            android:name=".Doctor_Data.Patient_details"
+            android:parentActivityName=".Doctor_Data.Doctor_board"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".Patient_DoctorProfileActivity"
-            android:parentActivityName=".Doctor_details"
+            android:name=".Patient_Data.Patient_DoctorProfileActivity"
+            android:parentActivityName=".Patient_Data.Doctor_details"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".BookAppointment"
-            android:parentActivityName=".Doctor_details"
+            android:name=".Patient_Data.BookAppointment"
+            android:parentActivityName=".Patient_Data.Doctor_details"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".RetrievePDF"
-            android:parentActivityName=".medRecords"
+            android:name=".Patient_Data.RetrievePDF"
+            android:parentActivityName=".Doctor_Data.medRecords"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".retrivemed"
-            android:parentActivityName=".patient_dashboard"
+            android:name=".Patient_Data.retrivemed"
+            android:parentActivityName=".Patient_Data.patient_dashboard"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".ChatbotMain"
-            android:parentActivityName=".patient_dashboard"
+            android:name=".Chatbot.ChatbotMain"
+            android:parentActivityName=".Patient_Data.patient_dashboard"
             android:screenOrientation="portrait" />
 
         <meta-data

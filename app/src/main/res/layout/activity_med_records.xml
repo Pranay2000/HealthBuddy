@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#373737"
-    tools:context=".medRecords">
+    tools:context=".Doctor_Data.medRecords">
 
     <LinearLayout
         android:orientation="vertical"
@@ -42,7 +42,7 @@
             android:id="@+id/Uploadpdf"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="@dimen/sign_inRight"
+            android:layout_margin="@dimen/text_box_right"
             android:background="@drawable/custom_gradient_button"
             android:text="Upload PDF"
             android:textColor="@color/white"
@@ -55,7 +55,7 @@
             android:id="@+id/Downloadpdf"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="@dimen/sign_inRight"
+            android:layout_margin="@dimen/text_box_right"
             android:background="@drawable/custom_gradient_button"
             android:text="Download PDF"
             android:textColor="@color/white"

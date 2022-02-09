@@ -1,4 +1,4 @@
-package com.example.healthbuddy;
+package com.example.healthbuddy.Patient_Data;
 
 import android.content.Intent;
 import android.graphics.Color;
@@ -15,6 +15,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.healthbuddy.R;
 import com.example.healthbuddy.models.putPDF;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;

@@ -1,4 +1,4 @@
-package com.example.healthbuddy;
+package com.example.healthbuddy.Patient_Data;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
@@ -15,6 +15,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.healthbuddy.R;
 import com.example.healthbuddy.models.BookedAppointmentList;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.firebase.ui.database.FirebaseRecyclerOptions;

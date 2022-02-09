@@ -30,7 +30,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/sign_inLeft"
+            android:layout_marginLeft="@dimen/text_box_left"
             android:layout_marginTop="@dimen/height_10"
             android:fontFamily="@font/open_sans"
             android:text="SIGN UP"
@@ -41,7 +41,7 @@
         <View
             android:layout_width="@dimen/Signup_80"
             android:layout_height="@dimen/Signup_2"
-            android:layout_marginLeft="@dimen/sign_inLeft"
+            android:layout_marginLeft="@dimen/text_box_left"
             android:layout_marginTop="@dimen/height_5"
             android:background="@color/white" />
 
@@ -49,8 +49,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/sign_inLeft"
-            android:layout_marginRight="@dimen/sign_inRight"
+            android:layout_marginLeft="@dimen/text_box_left"
+            android:layout_marginRight="@dimen/text_box_right"
             android:orientation="vertical"
             android:layout_marginTop="@dimen/height_10"
             android:padding="@dimen/height_5"
@@ -84,8 +84,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/sign_inLeft"
-            android:layout_marginRight="@dimen/sign_inRight"
+            android:layout_marginLeft="@dimen/text_box_left"
+            android:layout_marginRight="@dimen/text_box_right"
             android:orientation="vertical"
             android:layout_marginTop="@dimen/height_10"
             android:padding="@dimen/height_5"
@@ -120,8 +120,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/sign_inLeft"
-            android:layout_marginRight="@dimen/sign_inRight"
+            android:layout_marginLeft="@dimen/text_box_left"
+            android:layout_marginRight="@dimen/text_box_right"
             android:orientation="vertical"
             android:layout_marginTop="@dimen/height_10"
             android:padding="@dimen/height_5"
@@ -144,7 +144,6 @@
                 android:layout_height="wrap_content"
                 android:background="#3D3D3D"
                 android:fontFamily="@font/open_sans"
-                android:hint="example@gmail.com"
                 android:paddingLeft="16dp"
                 android:paddingTop="4dp"
                 android:paddingBottom="4dp"
@@ -152,46 +151,64 @@
                 android:textColorHint="@color/white" />
         </LinearLayout>
 
-        <LinearLayout
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/sign_inLeft"
-            android:layout_marginRight="@dimen/sign_inRight"
-            android:orientation="vertical"
+            android:layout_marginLeft="35dp"
             android:layout_marginTop="@dimen/height_10"
-            android:padding="@dimen/height_5"
-            android:backgroundTint="#3D3D3D" >
+            android:layout_marginRight="35dp"
+            android:backgroundTint="#3D3D3D"
+            android:orientation="vertical">
 
             <TextView
+                android:id="@+id/Pass"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Password"
-                android:textColor="@color/colorPrimaryDark"
+                android:layout_marginTop="4dp"
                 android:fontFamily="@font/open_sans"
-                android:textStyle="bold"
-                android:textSize="15dp"
-                android:paddingTop="4dp"
-                android:paddingLeft="16dp" />
-
-            <EditText
-                android:id="@+id/inputPassword"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="#3D3D3D"
-                android:fontFamily="@font/open_sans"
-                android:hint="********"
                 android:paddingLeft="16dp"
                 android:paddingTop="4dp"
-                android:paddingBottom="4dp"
-                android:textColor="@color/white"
-                android:textColorHint="@color/white" />
-        </LinearLayout>
+                android:text="Password"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintTop_toBottomOf="@id/Pass"
+                app:passwordToggleEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/inputPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#3D3D3D"
+                    android:fontFamily="@font/open_sans"
+                    android:inputType="textPassword"
+                    android:textSize="15sp"
+                    android:paddingLeft="16dp"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btnRegister"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="@dimen/sign_inRight"
+            android:layout_marginTop="@dimen/height_25"
+            android:layout_marginLeft="@dimen/text_box_left"
+            android:layout_marginRight="@dimen/text_box_right"
 
             android:background="@drawable/custom_gradient_button"
             android:backgroundTint="#FF647C"
@@ -206,8 +223,8 @@
             android:id="@+id/alreadyHaveAccount"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/height_10"
             android:layout_gravity="center"
-            android:layout_marginTop="@dimen/height_5"
             android:fontFamily="@font/open_sans"
             android:padding="@dimen/height_5"
             android:text="Already have account? Sign In..! "

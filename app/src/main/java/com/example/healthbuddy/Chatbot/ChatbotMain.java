@@ -1,8 +1,7 @@
-package com.example.healthbuddy;
+package com.example.healthbuddy.Chatbot;
 
 import android.os.Bundle;
 import android.util.Log;
-import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.Toast;
@@ -12,6 +11,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.healthbuddy.Adapter.ChatAdapter;
 import com.example.healthbuddy.Interfaces.BotReply;
+import com.example.healthbuddy.R;
 import com.example.healthbuddy.models.Message_pass;
 import com.google.api.gax.core.FixedCredentialsProvider;
 

@@ -41,7 +41,9 @@ public class registerpage extends AppCompatActivity {
         btn = findViewById(R.id.alreadyHaveAccount);
         inputName = findViewById(R.id.inputName);
         inputEmail = findViewById(R.id.inputEmail);
+        inputEmail.setHint("example@gmail.com");
         inputPassword = findViewById(R.id.inputPassword);
+        inputPassword.setHint("********");
         mAuth = FirebaseAuth.getInstance();
         mLoadingBar = new ProgressDialog(registerpage.this);
 
