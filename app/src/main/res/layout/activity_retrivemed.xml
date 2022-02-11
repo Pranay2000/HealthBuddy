@@ -18,7 +18,7 @@
             android:layout_width="@dimen/doctor_horizontal"
             android:layout_height="@dimen/doctor_vertical"
             android:layout_marginTop="140dp"
-            android:src="@drawable/med" />
+            android:src="@drawable/download_records" />
 
         <RelativeLayout
             android:layout_marginTop="20dp"

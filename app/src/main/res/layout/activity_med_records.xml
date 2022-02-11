@@ -18,7 +18,7 @@
             android:layout_width="@dimen/doctor_horizontal"
             android:layout_height="@dimen/doctor_vertical"
             android:layout_marginTop="140dp"
-            android:src="@drawable/med" />
+            android:src="@drawable/download_records" />
 
         <RelativeLayout
             android:layout_marginTop="20dp"
@@ -55,7 +55,9 @@
             android:id="@+id/Downloadpdf"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="@dimen/text_box_right"
+            android:layout_marginLeft="@dimen/text_box_left"
+            android:layout_marginRight="@dimen/text_box_right"
+            android:layout_marginTop="@dimen/height_10"
             android:background="@drawable/custom_gradient_button"
             android:text="Download PDF"
             android:textColor="@color/white"
