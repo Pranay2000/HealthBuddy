@@ -3,6 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/AndroidStudioProjects/HealthBuddy/app/src/main/res/drawable-hdpi/backspace.xml" value="0.23657407407407408" />
+        <entry key="..\:/AndroidStudioProjects/HealthBuddy/app/src/main/res/drawable-hdpi/border_outline.xml" value="0.23657407407407408" />
+        <entry key="..\:/AndroidStudioProjects/HealthBuddy/app/src/main/res/drawable-hdpi/curved_gray_medic1.xml" value="0.23657407407407408" />
+        <entry key="..\:/AndroidStudioProjects/HealthBuddy/app/src/main/res/drawable-hdpi/ic_image.xml" value="0.23657407407407408" />
+        <entry key="..\:/AndroidStudioProjects/HealthBuddy/app/src/main/res/drawable-hdpi/ic_launcher_background.xml" value="0.23657407407407408" />
+        <entry key="..\:/AndroidStudioProjects/HealthBuddy/app/src/main/res/drawable-hdpi/semi_circle.xml" value="0.23657407407407408" />
         <entry key="..\:/AndroidStudioProjects/HealthBuddy/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.23657407407407408" />
         <entry key="..\:/AndroidStudioProjects/HealthBuddy/app/src/main/res/drawable/backspace.xml" value="0.23657407407407408" />
         <entry key="..\:/AndroidStudioProjects/HealthBuddy/app/src/main/res/drawable/bg_chat_receive.xml" value="0.23657407407407408" />

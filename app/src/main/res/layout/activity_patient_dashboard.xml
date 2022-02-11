@@ -46,7 +46,7 @@
             android:layout_height="match_parent"
             android:layout_marginTop="@dimen/height_10">
 
-            <androidx.cardview.widget.CardView
+            <com.google.android.material.card.MaterialCardView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/DoctorDetails"
@@ -54,7 +54,9 @@
                 android:layout_rowWeight="1"
                 app:cardElevation="6dp"
                 app:cardCornerRadius="12dp"
-                android:layout_margin="12dp" >
+                android:layout_margin="12dp"
+                app:strokeColor="#F2F3F5"
+                app:strokeWidth="1dp">
 
                 <LinearLayout
                     android:orientation="vertical"
@@ -79,9 +81,9 @@
 
                 </LinearLayout>
 
-            </androidx.cardview.widget.CardView>
+            </com.google.android.material.card.MaterialCardView>
 
-            <androidx.cardview.widget.CardView
+            <com.google.android.material.card.MaterialCardView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/BookAppoint"
@@ -89,7 +91,9 @@
                 android:layout_rowWeight="1"
                 app:cardElevation="6dp"
                 app:cardCornerRadius="12dp"
-                android:layout_margin="12dp" >
+                android:layout_margin="12dp"
+                app:strokeColor="#F2F3F5"
+                app:strokeWidth="1dp">
 
                 <LinearLayout
                     android:orientation="vertical"
@@ -114,9 +118,9 @@
 
                 </LinearLayout>
 
-            </androidx.cardview.widget.CardView>
+            </com.google.android.material.card.MaterialCardView>
 
-            <androidx.cardview.widget.CardView
+            <com.google.android.material.card.MaterialCardView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/PatientRecords"
@@ -127,7 +131,9 @@
                 android:layout_marginTop="20dp"
                 android:layout_marginLeft="12dp"
                 android:layout_marginRight="12dp"
-                android:layout_marginBottom="12dp">
+                android:layout_marginBottom="12dp"
+                app:strokeColor="#F2F3F5"
+                app:strokeWidth="1dp">
 
                 <LinearLayout
                     android:orientation="vertical"
@@ -152,9 +158,9 @@
 
                 </LinearLayout>
 
-            </androidx.cardview.widget.CardView>
+            </com.google.android.material.card.MaterialCardView>
 
-            <androidx.cardview.widget.CardView
+            <com.google.android.material.card.MaterialCardView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/PatientChat"
@@ -162,7 +168,9 @@
                 android:layout_rowWeight="1"
                 app:cardElevation="6dp"
                 app:cardCornerRadius="12dp"
-                android:layout_margin="12dp" >
+                android:layout_margin="12dp"
+                app:strokeColor="#F2F3F5"
+                app:strokeWidth="1dp">
 
                 <LinearLayout
                     android:orientation="vertical"
@@ -187,7 +195,7 @@
 
                 </LinearLayout>
 
-            </androidx.cardview.widget.CardView>
+            </com.google.android.material.card.MaterialCardView>
 
         </GridLayout>
 
