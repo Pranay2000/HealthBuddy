@@ -30,11 +30,11 @@ aids in the job completion of doctors effectively such as upload medical records
 
 ### Login & Signup:
 
-<img src = "https://github.com/Pranay2000/HealthBuddy/blob/master/App%20Screenshots/login.PNG" height= "350"/> &nbsp; &nbsp; &nbsp;<img src = "https://github.com/Pranay2000/HealthBuddy/blob/master/App%20Screenshots/SignUp.PNG" height= "350"/>
+<img src = "https://github.com/Pranay2000/HealthBuddy/blob/master/App%20Screenshots/login.jpg" height= "350"/> &nbsp; &nbsp; &nbsp;<img src = "https://github.com/Pranay2000/HealthBuddy/blob/master/App%20Screenshots/SignUp.PNG" height= "350"/>
 
 ### Patient and Doctor DashBoards:
 
-<img src = "https://github.com/Pranay2000/HealthBuddy/blob/master/App%20Screenshots/patient%20dashboard.PNG" height="350"/> &nbsp; &nbsp; &nbsp; <img src = "https://github.com/Pranay2000/HealthBuddy/blob/master/App%20Screenshots/doctor%20dashboard.PNG" height = "350"/>
+<img src = "https://github.com/Pranay2000/HealthBuddy/blob/master/App%20Screenshots/patient%20dashboard.png" height="350"/> &nbsp; &nbsp; &nbsp; <img src = "https://github.com/Pranay2000/HealthBuddy/blob/master/App%20Screenshots/doctor%20dashboard.PNG" height = "350"/>
 
 ### Doctors List & Profile:
 
